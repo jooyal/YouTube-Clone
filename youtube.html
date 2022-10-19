@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="icon" href="thumbnails/icon-header.png">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9da7a0473.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!-- Adding a header and styling it to be in fixed position -->
+
+    <div class="header">
+        <div class="left-section">
+            <img src="icons/hamburger-menu.svg" alt="hamburger menu" class="hamburger-menu" >
+            <img src="icons/youtube-logo.svg" alt="youtube-logo" class="youtube-logo">
+        </div>
+        <div class="middle-section">
+            <input type="text" class="search-bar" placeholder="Search">
+            <button class="search-button-icon">
+                <img class="search-icon" src="icons/search.svg" alt="">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <img src="icons/upload.svg" alt="" class="upload-icon">
+                <div class="tooltip">Create</div>
+            </div>
+            
+            <div class="youtube-apps-container">
+                <img src="icons/youtube-apps.svg" alt="" class="youtube-apps-icon">
+                <div class="tooltip">YouTube Apps</div>
+            </div>
+
+                <div class="notifications-icon-container">
+                        <img src="icons/notifications.svg" alt="" class="notification-icon">
+                        <div class="tooltip">Notifications</div>
+                    <div class="notification-count">3</div>
+                </div>
+            <img src="thumbnails/icon-header.png" alt="" class="current-user-picture">
+        </div>
+    </div>
+
+    <!-- Adding a sidebar and styling it to be in a fixed position -->
+
+    <div class="sidebar">
+        <div class="sidebar-link">
+                <img src="icons/home.svg" alt="">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+                <img src="icons/explore.svg" alt="">
+                <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+                <img src="icons/subscriptions.svg" alt="">
+                <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+                <img src="icons/originals.svg" alt="">
+                <div>Orginals</div>
+        </div>
+        <div class="sidebar-link">
+                <img src="icons/youtube-music.svg" alt="">
+                <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+                <img src="icons/library.svg" alt="">
+                <div>Library</div>
+        </div>
+    </div>
+
+    <!-- Adding video thumbnails and descriptions in a grid format -->
+
+    <div class="video-grid">
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/1.webp" alt="Learn HTML & CSS">
+                </a>
+                <div class="video-timer">14:20</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/1.1.jpeg" alt="Marques and Sundar">
+                </div>
+                <div class="video-description-container">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="_blank"  class="video-title">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </a>
+                    <p class="video-stats">
+                        Marques Brownlee &#183; 3.4M views &#183; 6 months ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a href="https://m.youtube.com/watch?v=G3e-cpL7ofc" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/2.webp" alt="Learn HTML & CSS">
+                </a>
+                <div class="video-timer">6:31:23</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/2.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a href="https://m.youtube.com/watch?v=G3e-cpL7ofc" class="video-title" target="_blank">
+                        HTML & CSS Full Course - Beginner to Pro (2022)
+                    </a>
+                    <p class="video-stats">
+                        SuperSimpleDev &#183; 2M views &#183; 8 months ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a class="video-title" href="https://m.youtube.com/watch?v=rALehUl-4kM" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/3.webp" alt="Virat taking wicket">
+                </a>
+                <div class="video-timer">10:25</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/3.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a class="video-title" href="https://m.youtube.com/watch?v=rALehUl-4kM" target="_blank">
+                        Virat Kohli outstanding fielding in IND vs AUS warmup match in T20 World Cup !
+                    </a>
+                    <p class="video-stats">
+                        Fantasy Support &#183; 3M views &#183; 23 hours ago
+
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a class="video-title" href="https://m.youtube.com/watch?v=s2mYsPWzLjg" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/4.webp" alt="Data structures">
+                </a>
+                <div class="video-timer">7:24</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/4.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a class="video-title" href="https://m.youtube.com/watch?v=s2mYsPWzLjg" target="_blank">
+                        How I mastered Data Structures and Algorithms
+                    </a>
+                    <p class="video-stats">
+                        Power Couple &#183; 135K views &#183; 9 days ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a class="video-title" href="https://www.youtube.com/watch?v=OM1Y8LBHraY" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/5.webp" alt="Karikku">
+                </a>
+                <div class="video-timer">36:26</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/5.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a class="video-title" href="https://www.youtube.com/watch?v=OM1Y8LBHraY" target="_blank">
+                        BHARATI APARTMENTS | Final Part | Karikku | Comedy
+                    </a>
+                    <p class="video-stats">
+                        Karikku &#183; 4.4M viewse &#183; 3 days ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a class="video-title" href="https://www.youtube.com/watch?v=cvgxvwNbQXI" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/6.webp" alt="Adam in jail">
+                </a>
+                <div class="video-timer">5:34</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/6.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a class="video-title" href="https://www.youtube.com/watch?v=cvgxvwNbQXI" target="_blank">
+                        When they spell ur name wrong
+                    </a>
+                    <p class="video-stats">
+                        Adam W &#183; 4.7M views &#183; 3 weeks ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a class="video-title" href="https://www.youtube.com/watch?v=JCwe0TRb4Sg" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/7.webp" alt="M4 Tech">
+                </a>
+                <div class="video-timer">13:04</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/7.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a class="video-title" href="https://www.youtube.com/watch?v=JCwe0TRb4Sg" target="_blank">
+                        10000 Bubble Gum Giant Bubble Making Challenge
+                    </a>
+                    <p class="video-stats">
+                        M4 Tech &#183; 1.6M views &#183; 4 days ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a class="video-title" href="https://www.youtube.com/watch?v=gHzuabZUd6c" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/8.webp" alt="MrBeast">
+                </a>
+                <div class="video-timer">17:51</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/8.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a class="video-title" href="https://www.youtube.com/watch?v=gHzuabZUd6c" target="_blank">
+                        Survive 100 Days In Circle, Win $500,000
+                    </a>
+                    <p class="video-stats">
+                        MrBeast &#183; 48M views &#183; 3 weeks ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a class="video-title" href="https://www.youtube.com/watch?v=DqaTKBU9TZk" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/9.webp" alt="Getting a job">
+                </a>
+                <div class="video-timer">1:45:10</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/9.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a class="video-title" href="https://www.youtube.com/watch?v=DqaTKBU9TZk" target="_blank">
+                        BEST JavaScript Tutorial for Beginners for Getting a Job
+                    </a>
+                    <p class="video-stats">
+                        SuperSimpleDev &#183; 304K views &#183; 1 year ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a class="video-title" href="https://www.youtube.com/watch?v=emWJiEJ30J0" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/10.webp" alt="Stories from the Sky">
+                </a>
+                <div class="video-timer">36:37</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/10.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a class="video-title" href="https://www.youtube.com/watch?v=emWJiEJ30J0" target="_blank">
+                        Sid Acharya - Stories from the Sky
+                    </a>
+                    <p class="video-stats">
+                        Sid Acharya &#183; 34K views &#183; 1 year ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a class="video-title" href="https://www.youtube.com/watch?v=bSpOU-5aq-8" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/11.webp" alt="Tiger being freed">
+                </a>
+                <div class="video-timer">9:28</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/11.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a class="video-title" href="https://www.youtube.com/watch?v=bSpOU-5aq-8" target="_blank">
+                        Animals Being FREED For The First Time!
+                    </a>
+                    <p class="video-stats">
+                        Wicked Wombat &#183; 20M views &#183; 3 weeks ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <div  class="video-thumbnail-row">
+                <a class="video-title" href="https://www.youtube.com/watch?v=eIrMbAQSU34" target="_blank">
+                <img class="video-thumbnail" src="thumbnails/12.webp" alt="JAVA Tutorial">
+                </a>
+                <div class="video-timer">2:30:47</div>
+            </div>
+            <div class="video-info-grid">
+                <div class="channel-thumbnail-row">
+                    <img class="channel-thumbnail" src="thumbnails/12.1.jpg" alt="">
+                </div>
+                <div class="video-description-container">
+                    <a class="video-title" href="https://www.youtube.com/watch?v=eIrMbAQSU34" target="_blank">
+                        Java Tutorial for Beginners
+                    </a>
+                    <a class="video-stats">
+                        Programming with Mosh &#183; 7.9M views &#183; 3 years ago
+                    </p>
+                </div>
+                <div class="more-icon">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+</body>
+</html>

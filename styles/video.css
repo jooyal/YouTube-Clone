@@ -1,0 +1,92 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 550px) {
+    .video-grid{
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media (min-width: 550px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media (width>750px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+/* we can also use[ (min-width:751px) and (max-width:999px) ]above */
+
+@media (width>1000px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+}
+
+
+.video-thumbnail-row {
+    position: relative;
+}
+
+.video-thumbnail {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.video-timer {
+    position: absolute;
+    color: white;
+    background-color: black;
+    font-size: 12px;
+    font-weight: 500;
+    right: 8px;
+    bottom: 20px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 2px;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr 15px;
+}
+
+.channel-thumbnail {
+    width: 40px;
+    border-radius: 20px;
+    vertical-align: top;
+}
+
+.video-description-container {
+    vertical-align: top;
+}
+
+.video-title {
+    font-weight: 500;
+    font-size: 14px;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+.video-stats {
+    vertical-align: top;
+    color: rgb(96,96,96);
+    font-size: 12px;
+}
+
+.more-icon {
+    display: inline-block;
+}
